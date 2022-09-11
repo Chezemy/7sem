@@ -23,11 +23,38 @@ namespace TourApp
         public HotelsPage()
         {
             InitializeComponent();
+            /*DGridHotels.ItemsSource = ToursBaseEntities.GetContext().Hotels.ToList();*/
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Manager.MainFrame.Navigate(new AddEditPage());
+        }
+
+        private void BtnEdit_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BtnAdd_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new AddEditPage());
+        }
+
+        private void BtnDelete_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Page_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            if (Visibility == Visibility.Visible)
+            {
+                ToursBaseEntities.GetContext().ChangeTracker.Entries().ToList().ForEach(p => p.Reload());
+                DGridHotels.ItemsSource = ToursBaseEntities.GetContext().Hotels.ToList();
+            }
+
+            
         }
     }
 }

@@ -10,6 +10,5 @@ namespace TourApp
     class Manager
     {
         public static Frame MainFrame { get; set; }
-
     }
 }
