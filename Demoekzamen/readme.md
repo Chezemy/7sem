@@ -91,6 +91,22 @@ ER - entity relationship - сущность и связь <br>
 
 ![image](https://user-images.githubusercontent.com/39220694/189868313-2bd24f35-e698-412c-a163-1ef57b39e9b0.png)
 
+Создавть новый файл excel, в котором разные листы - это данные для импорта, чтобы не испортить входные данные
+
+Перевод в единое время:  
+ 1.разделить данные по столбцам, чтобы воспользоваться формулой перевода все в единое время
+ ![image](https://user-images.githubusercontent.com/40539112/195325069-993e913f-0108-48aa-9597-aa7ed7039d08.png)
+ <br>
+ =ЕСЛИ(J2="минут";I2/60;I2) <br>
+  Функция ВПР. Справа указываются ключи <br>
+ ![image](https://user-images.githubusercontent.com/40539112/195328235-0172edfa-8920-456a-848c-3ce18f95c403.png)
+
+![image](https://user-images.githubusercontent.com/40539112/195329692-f78609b0-6a1f-409b-b502-918b7085c763.png)
+<br>
+ =ВПР(G2;$N$2:$O$4;2;ЛОЖЬ)
+
+</ol>
+
 ## программные решения для бизнеса esat
 https://esat.worldskills.ru/competencies/dac59f20-134b-4aa4-94e5-518c488ccc9e/categories/d747aed4-5204-4ab4-a3f1-dec61f99735d
 ## подготовка
