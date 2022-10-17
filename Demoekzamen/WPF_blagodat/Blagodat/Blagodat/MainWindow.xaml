@@ -12,7 +12,7 @@
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="30"></RowDefinition>
         </Grid.RowDefinitions>
+        <Button HorizontalAlignment="Right"></Button>
+        <Frame ></Frame>
     </Grid>
-
-    <Grid Background="#FFFFFF"></Grid>
 </Window>
