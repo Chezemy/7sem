@@ -111,6 +111,8 @@ ER - entity relationship - сущность и связь <br>
 
 ![image](https://user-images.githubusercontent.com/40539112/196673926-bbb0ddc9-6bce-4f92-bc49-6fa6b5597dcd.png)
 
+![image](https://user-images.githubusercontent.com/40539112/196679278-24920869-1633-4d81-bf8f-c22ef09a64b6.png)
+
 
 ## программные решения для бизнеса esat
 https://esat.worldskills.ru/competencies/dac59f20-134b-4aa4-94e5-518c488ccc9e/categories/d747aed4-5204-4ab4-a3f1-dec61f99735d
