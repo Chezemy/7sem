@@ -18,7 +18,7 @@ namespace VTE.Models
         public zakazy()
         {
             this.clients = new HashSet<client>();
-            this.uslugis = new HashSet<uslugi>();
+            this.prodss = new HashSet<prods>();
         }
     
         public int id { get; set; }
@@ -26,7 +26,7 @@ namespace VTE.Models
         public Nullable<System.DateTime> date_creation { get; set; }
         public Nullable<System.TimeSpan> time { get; set; }
         public Nullable<int> code_client { get; set; }
-        public string uslugi { get; set; }
+        public string prods { get; set; }
         public string status { get; set; }
         public Nullable<System.DateTime> date_of_closing { get; set; }
         public string time_prokat { get; set; }
@@ -34,6 +34,6 @@ namespace VTE.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<client> clients { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<uslugi> uslugis { get; set; }
+        public virtual ICollection<prods> prodss { get; set; }
     }
 }

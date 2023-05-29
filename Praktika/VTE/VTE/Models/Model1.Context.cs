@@ -28,7 +28,7 @@ namespace VTE.Models
         public virtual DbSet<client> clients { get; set; }
         public virtual DbSet<Role> Roles { get; set; }
         public virtual DbSet<User> Users { get; set; }
-        public virtual DbSet<uslugi> uslugi { get; set; }
+        public virtual DbSet<prods> prods { get; set; }
         public virtual DbSet<zakazy> zakazies { get; set; }
     }
 }

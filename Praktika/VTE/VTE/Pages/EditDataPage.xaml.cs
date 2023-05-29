@@ -30,14 +30,14 @@ namespace VTE.Pages
         {
             try
             {
-                uslugi usl = new uslugi();
+                prods prd = new prods();
                 int a = Int32.Parse(Price.Text);
                 int b = Int32.Parse(IdTbx.Text);
-                usl.ID =b;
-                usl.price = a;
-                usl.title = CmbTitle.Text;
+                prd.ID =b;
+                prd.price = a;
+                prd.title = CmbTitle.Text;
             
-                AppData.db.uslugi.Add(usl);
+                AppData.db.prods.Add(prd);
                 AppData.db.SaveChanges();
                 MessageBox.Show("Данные внесены успешно");
                 NavigationService.GoBack();

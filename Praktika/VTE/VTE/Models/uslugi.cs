@@ -12,7 +12,7 @@ namespace VTE.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class uslugi
+    public partial class prods
     {
         public int ID { get; set; }
         public string title { get; set; }

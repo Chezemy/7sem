@@ -30,11 +30,11 @@ namespace VTE.Pages
         {
             if (MessageBox.Show("Вы уверены, что хотите удалить?", "Предупреждение", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
             {
-                var CurrentUsl = DGridUslugi.SelectedItem as uslugi;
-                AppData.db.uslugi.Remove(CurrentUsl);
+                var Currentprd = DGridprods.SelectedItem as prods;
+                AppData.db.prods.Remove(Currentprd);
                 AppData.db.SaveChanges();
 
-                DGridUslugi.ItemsSource = AppData.db.uslugi.ToList();
+                DGridprods.ItemsSource = AppData.db.prods.ToList();
                 MessageBox.Show("Данные удалены успешно!");
             }
         }
@@ -51,7 +51,7 @@ namespace VTE.Pages
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
-            DGridUslugi.ItemsSource = AppData.db.uslugi.ToList();
+            DGridprods.ItemsSource = AppData.db.prods.ToList();
         }
     }
 }
